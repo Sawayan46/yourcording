@@ -150,7 +150,7 @@ main {
 
 .top-bg {
 	min-height: 768px;
-	background: url(/img/obal.svg) top -131px right -100px/708px no-repeat;
+	background: url(../img/obal.svg) top -131px right -100px/708px no-repeat;
 }
 
 .top {
