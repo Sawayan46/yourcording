@@ -157,7 +157,7 @@ a {
 /* common
 ------------------------------------*/
 main {
-	max-width: 1366px;
+	// max-width: 1366px;
 	margin: 0 auto;
 	padding-top: 94px;
 }
@@ -221,6 +221,10 @@ main {
 }
 
 .top {
+	@include mq(sm) {
+		display: block;
+	}
+
 	display: flex;
 	align-items: center;
 	padding-top: 131px;
@@ -232,6 +236,8 @@ main {
 	@include mq(sm) {
 		flex: 1 0 50%;
 		padding-top: 40px;
+		z-index: 10;
+		position: relative;
 	}
 }
 
@@ -261,6 +267,7 @@ main {
 
 	@include mq(sm) {
 		flex: 1 1 40%;
+		margin-top: -75px;
 	}
 }
 
@@ -496,6 +503,8 @@ main {
 		flex-direction: column;
 	}
 
+	max-width: 1366px;
+	margin: 0 auto;
 	margin-top: 54px;
 	display: flex;
 }
@@ -516,6 +525,10 @@ main {
 			margin-left: 30px;
 		}
 	}
+}
+
+.blog-item {
+	height: 100%;
 }
 
 .blog-item-link {
@@ -623,7 +636,7 @@ main {
 /* Swiper
 ------------------------------------*/
 .swiper-container {
-	width: 1366px;
+	// width: 1366px;
 }
 
 /*========================================
@@ -718,6 +731,8 @@ input[type="email"] {
 	width: 100%;
 	max-width: 500px;
 	height: 43px;
+	font-size: 16px;
+	padding: 0.2em 0.5em;
 	border: none;
 	background: rgba(238, 251, 251, 1);
 	border-radius: 3px;
@@ -726,6 +741,8 @@ input[type="email"] {
 textarea {
 	width: 100%;
 	height: 180px;
+	font-size: 16px;
+	padding: 0.2em 0.5em;
 	border: none;
 	background: rgba(238, 251, 251, 1);
 	border-radius: 3px;

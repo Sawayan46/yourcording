@@ -15,7 +15,7 @@ $(document).ready(function () {
 	});
 
 	// Swiper
-	var mySwiper = new Swiper(".swiper-container", {
+	let mySwiper = new Swiper(".swiper-container", {
 		autoplay: {
 			delay: 5000,
 		},
